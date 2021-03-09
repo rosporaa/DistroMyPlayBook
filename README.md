@@ -30,6 +30,8 @@ Interakcia uzivatela:
 
 Program sa pri prvom spusteni daneho gamebooku pripaja cez modu gTTS na Internet a generuje zvukove subory. Ak sa programu nepodari vygenerovat zvuky (nedostupny Internet), zobrazuje iba texty gamebooku. Vygenerovanie zvukov sa opakuje pri dalsom spusteni programu.
 
+# Vytvorenie vlastneho pribehu
+
 Pribeh je mozne pisat priamo do SQLIte databazy (nap. pomocou DB Browser for SQLite), alebo je ho mozne zapisat do textoveho dokumentu a 'prekonvertovat' do SQLite databazy pomocou programu dbmaker.exe.
 
 Cistu databazu s potrebnymi tabulkami je mozne vytvorit pomocou programu dbmaker.exe zadamin: dbmaker.exe --empty
