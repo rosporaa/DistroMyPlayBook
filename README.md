@@ -34,6 +34,8 @@ Program sa pri prvom spusteni daneho gamebooku pripaja cez modu gTTS na Internet
 
 Pribeh je mozne pisat priamo do SQLIte databazy (nap. pomocou DB Browser for SQLite), alebo je ho mozne zapisat do textoveho dokumentu a 'prekonvertovat' do SQLite databazy pomocou programu dbmaker.exe.
 
+Textový súbor musí byť v kódovaní UTF-8.
+
 Cistu databazu s potrebnymi tabulkami je mozne vytvorit pomocou programu dbmaker.exe zadamin: dbmaker.exe --empty
 
 Struktura textoveho dokumentu, ktory je mozno konvertovat do databazy je nasledovna:
