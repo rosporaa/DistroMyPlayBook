@@ -1,0 +1,1 @@
+dbmaker.exe --empty
