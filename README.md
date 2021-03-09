@@ -34,7 +34,7 @@ Pribeh je mozne pisat priamo do SQLIte databazy (nap. pomocou DB Browser for SQL
 
 Cistu databazu s potrebnymi tabulkami je mozne vytvorit pomocou programu dbmaker.exe zadamin: dbmaker.exe --empty
 
-Struktura textoveho dokumenty, kktory je mozno konvertovat do databazy je nasledovna:
+Struktura textoveho dokumenty, ktory je mozno konvertovat do databazy je nasledovna:
 
 Databaza potrebuje tri tabulky : settings, rooms, routes.
 Obsah tychto tabuliek teda musi byt uvedeny v textovom subore.
@@ -68,4 +68,59 @@ Obsah tychto tabuliek teda musi byt uvedeny v textovom subore.
    - strukrura v texte
      -  cislo_miestnosti_odkial(v ktorej sme) cislo_vychodu(1,2,3,4) cislo_miestnosti_kam_vychod_vedie_alebo_zaporne_cislo_pre_ukoncenie_hry
      -  napr. 3 5 23
-
+     -  
+ v tabulke routes moze byt ako cislo vychodu (posledne cislo) uvedene aj zaporne cislo. To znamena, ze tu pribeh konci (koncov pribehu moze byt viac)
+ 
+ Zaporne cisla znamenaju:
+   - Ukoncenie pribehu:
+   - -1 Našli ťa mŕtveho po niekoľkých dňoch...
+   - -2 Vrátil si sa  domov a užívaš si nadobudnuté bohatstvo...
+   - -3 Vrátil si sa domov ako veľký hrdina. Teraz môžeš aj ty rozprávať v krčme svoje dobrodružstvá...
+   - -4 Si rád, že si sa vrátil domov živý a zdravý. Už viac nikam nepôjdeš a radšej o svojom dobrodružstve ani nikomu nič nepovieš.
+       
+Priklad celeho suboru:
+```
+#riadok tabulky settings - vsetky hodnoty MUSIA byt vyplnene. Vacsinou taci zmenut NAME, AUTHOR, LANG, STARROOM a ACTUAL
+$S
+NAME        Testovací príbeh
+AUTHOR      VlNa
+LANG        sk
+STARTROOM   1
+END_DEF     To je koniec tvojho dobrodružstva.
+END_DEAD    Našli ťa mŕtveho po niekoľkých dňoch...
+END_GOLD    Vrátil si sa  domov a užívaš si nadobudnuté bohatstvo...
+END_HERO    Vrátil si sa domov ako veľký hrdina. Teraz môžeš aj ty rozprávať v krčme svoje dobrodružstvá... 
+END_LIVE    Si rád, že si sa vrátil domov živý a zdravý. Už viac nikam nepôjdeš a radšej o svojom dobrodružstve ani nikomu nič nepovieš.
+QUESTION    Čo urobíš?
+MOVE_1      Šípka hore
+MOVE_2      Šípka dole
+MOVE_3      Šípka vpravo
+MOVE_4      Šípka vľavo
+ENTER       Enter:  Prerozprávaj odznova.
+ACTUAL      1
+GTTS_SLOW   0
+NO_WAY      Neplatná voľba
+EXIT_GAME   Medzera: ukončí program.
+TALKING     Rozprávam...
+#riadky tabulky rooms - popis miestnosti a akcii
+$R
+@1
+sk
+Zlata miestnost
+Si v zlatej miestnosti. Pred sebou vidis strieborne dvere.
+#ako sa do tejto miestnosti dostaneme z inych miestnosti
+Prejdi cez zlate dvere.
+bg/wind.wav
+@2
+sk
+Strieborna miestnost
+Si v striebornej miestnosti.  Pred sebou vidis zlate dvere.
+Prejdi cez strieborne dvere.
+bg/wind.wav
+#riadky tabulky routes - odkial sa kam ide
+$O
+#z prvej miestnosti prvym vychodom do druhej miestnosti
+1 1 2
+#z druhej miestnosti prvym vychodom do prvej miestnosti
+2 1 1
+```
