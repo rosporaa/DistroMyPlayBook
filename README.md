@@ -1,5 +1,6 @@
 # Ditribution for simpleGameBook
-Win executables for simpleGameBook
+Win executables for simpleGameBook.
+Created with pyinstaller from python 3.9.2 - only usable on Window 8+
 
 Click green button 'Code' - Download zip file.
 Unpack to directory and run sgb.bat
