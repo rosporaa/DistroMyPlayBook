@@ -1,20 +1,21 @@
-# DistroMyPlayBook
-Win executables for MyPlayBook
+# Ditribution for simpleGameBook
+Win executables for simpleGameBook
 
-Download all files, unpack to directory and run mesec.bat
+Click green button 'Code' - Download zip file.
+Unpack to directory and run sgb.bat
 
 You can create your own database with story/adventure.
 
-Co je MyPlayBook?
+Co je simpleGameBook?
 
-# MyPlayBook
-program z ponuknutej sqlite databazy vytvori zvuky (ak uz neexistuju) a spusti/prejde hru (gamebook, playbook). Spustenie/prejdenie hry znamena, ze program cita a zobrazuje jednotlive 'miestnosti/akcie' z databazy a caka na interakciu uzivatela.
+# simpleGameBook
+program z ponuknutej sqlite databazy vytvori zvuky (ak uz neexistuju) a spusti/prejde hru (gamebook). Spustenie/prejdenie hry znamena, ze program cita a zobrazuje jednotlive 'miestnosti/akcie' z databazy a caka na interakciu uzivatela.
 
 Spustenie:
-pb.exe [-h] [--lang LANG] [--notext] database
+sgb.exe [-h] [--lang LANG] [--notext] database
 
  - Povinny argument
-   - database     SQLite databaza s playbook datami
+   - database     SQLite databaza s gameBook datami
  - Nepovinne argumenty:
    -  -h, --help   Zobraz help
    - --lang LANG  Pouzi dany jazyk (en, es, sk ...)
