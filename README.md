@@ -34,7 +34,7 @@ Pribeh je mozne pisat priamo do SQLIte databazy (nap. pomocou DB Browser for SQL
 
 Cistu databazu s potrebnymi tabulkami je mozne vytvorit pomocou programu dbmaker.exe zadamin: dbmaker.exe --empty
 
-Struktura textoveho dokumenty, ktory je mozno konvertovat do databazy je nasledovna:
+Struktura textoveho dokumentu, ktory je mozno konvertovat do databazy je nasledovna:
 
 Databaza potrebuje tri tabulky : settings, rooms, routes.
 Obsah tychto tabuliek teda musi byt uvedeny v textovom subore.
@@ -68,11 +68,10 @@ Obsah tychto tabuliek teda musi byt uvedeny v textovom subore.
    - strukrura v texte
      -  cislo_miestnosti_odkial(v ktorej sme) cislo_vychodu(1,2,3,4) cislo_miestnosti_kam_vychod_vedie_alebo_zaporne_cislo_pre_ukoncenie_hry
      -  napr. 3 5 23
-     -  
- v tabulke routes moze byt ako cislo vychodu (posledne cislo) uvedene aj zaporne cislo. To znamena, ze tu pribeh konci (koncov pribehu moze byt viac)
+      
+ V tabulke routes moze byt ako cislo vychodu (posledne cislo) uvedene aj zaporne cislo. To znamena, ze tu pribeh konci (koncov pribehu moze byt viac)
  
  Zaporne cisla znamenaju:
-   - Ukoncenie pribehu:
    - -1 Našli ťa mŕtveho po niekoľkých dňoch...
    - -2 Vrátil si sa  domov a užívaš si nadobudnuté bohatstvo...
    - -3 Vrátil si sa domov ako veľký hrdina. Teraz môžeš aj ty rozprávať v krčme svoje dobrodružstvá...
