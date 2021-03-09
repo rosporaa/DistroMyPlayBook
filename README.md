@@ -107,16 +107,16 @@ TALKING     Rozprávam...
 $R
 @1
 sk
-Zlata miestnost
-Si v zlatej miestnosti. Pred sebou vidis strieborne dvere.
+Zlatá miestnosť
+Si v zlatej miestnosti. Pred sebou vidíš strieborné dvere.
 #ako sa do tejto miestnosti dostaneme z inych miestnosti
-Prejdi cez zlate dvere.
+Prejdi cez zlaté dvere.
 bg/wind.wav
 @2
 sk
-Strieborna miestnost
-Si v striebornej miestnosti.  Pred sebou vidis zlate dvere.
-Prejdi cez strieborne dvere.
+Strieborná miestnosť
+Si v striebornej miestnosti.  Pred sebou vidíš zlaée dvere.
+Prejdi cez strieborné dvere.
 bg/wind.wav
 #riadky tabulky routes - odkial sa kam ide
 $O
