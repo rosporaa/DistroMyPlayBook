@@ -1,0 +1,84 @@
+#riadok tabulky settings - vsetky hodnoty MUSIA byt vyplnene. Vacsinou staci zmenit NAME, AUTHOR, LANG, STARROOM a ACTUAL
+#row of settings table - all values need to be set. You can use more rows with different LANG value 
+$S
+NAME        Testovací príbeh
+AUTHOR      VlNa
+LANG        sk
+STARTROOM   1
+END_DEF     To je koniec tvojho dobrodružstva.
+END_DEAD    Našli ťa mŕtveho po niekoľkých dňoch...
+END_GOLD    Vrátil si sa  domov a užívaš si nadobudnuté bohatstvo...
+END_HERO    Vrátil si sa domov ako veľký hrdina. Teraz môžeš aj ty rozprávať v krčme svoje dobrodružstvá... 
+END_LIVE    Si rád, že si sa vrátil domov živý a zdravý. Už viac nikam nepôjdeš a radšej o svojom dobrodružstve ani nikomu nič nepovieš.
+QUESTION    Čo urobíš?
+MOVE_1      Šípka hore
+MOVE_2      Šípka dole
+MOVE_3      Šípka vpravo
+MOVE_4      Šípka vľavo
+ENTER       Enter:  Prerozprávaj odznova.
+ACTUAL      1
+GTTS_SLOW   0
+NO_WAY      Neplatná voľba
+EXIT_GAME   Medzera: ukončí program.
+TALKING     Rozprávam...
+THE_END     KONIEC
+$S
+NAME        Test adventure 
+AUTHOR      VlNa
+LANG        en
+STARTROOM   1
+END_DEF     This is the end of your adventure. 
+END_DEAD    They found You dead after a few days...
+END_GOLD    You have returned home and you are enjoying the acquired wealth ... 
+END_HERO    You returned home as a great hero. Now you can also talk about your adventures in the pub ...  
+END_LIVE    You're glad you came home alive and well. You won't go anywhere anymore and you'd rather not tell anyone about your adventure or anyone. 
+QUESTION    What do you do? 
+MOVE_1      Arrow UP
+MOVE_2      Arrow DOWN
+MOVE_3      Arrow RIGHT
+MOVE_4      Arrow LEFT
+ENTER       Enter: Talk again.
+ACTUAL      0
+GTTS_SLOW   0
+NO_WAY      Invalid key
+EXIT_GAME   Space: ends program.
+TALKING     Talking...
+THE_END     THE END
+#riadky tabulky rooms - popis miestnosti a akcii
+#rows of rooms table - rooms/actions descriptions, background sound (- for nosound)
+$R
+@1
+sk
+Zlatá miestnosť
+Si v zlatej miestnosti. Pred sebou vidíš strieborné dvere.
+#ako sa do tejto miestnosti dostaneme z inych miestnosti
+Prejdi cez zlaté dvere.
+bg/wind.wav
+@1
+en
+Golden room
+You are in golden room. You see silver doors in front of You.
+#how to come to pass to this room
+Use golden doors.
+bg/wind.wav
+@2
+sk
+Strieborná miestnosť
+Si v striebornej miestnosti.  Pred sebou vidíš zlaté dvere.
+Prejdi cez strieborné dvere.
+bg/wind.wav
+@2
+en
+Silver room
+You are in silver room. You see golden doors in front of You.
+Use silver doors.
+bg/wind.wav
+#riadky tabulky routes - odkial sa kam ide
+#rows of routes table - from direction to
+$O
+#z prvej miestnosti prvym vychodom do druhej miestnosti
+#from 1st room trought 1st route to second room
+1 1 2
+#z druhej miestnosti prvym vychodom do prvej miestnosti
+#from 2nd room trought 2nd route to second room
+2 1 1
