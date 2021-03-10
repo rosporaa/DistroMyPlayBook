@@ -53,26 +53,26 @@ Zlatá miestnos
 Si v zlatej miestnosti. Pred sebou vidíš strieborné dvere.
 #ako sa do tejto miestnosti dostaneme z inych miestnosti
 Prejdi cez zlaté dvere.
-bg/wind.wav
+bgs/end.wav
 @1
 en
 Golden room
 You are in golden room. You see silver doors in front of You.
 #how to come to pass to this room
 Use golden doors.
-bg/wind.wav
+bgs/end.wav
 @2
 sk
 Strieborná miestnos
 Si v striebornej miestnosti.  Pred sebou vidíš zlaté dvere.
 Prejdi cez strieborné dvere.
-bg/wind.wav
+bgs/end.wav
 @2
 en
 Silver room
 You are in silver room. You see golden doors in front of You.
 Use silver doors.
-bg/wind.wav
+bgs/end.wav
 #riadky tabulky routes - odkial sa kam ide
 #rows of routes table - from direction to
 $O
