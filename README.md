@@ -83,7 +83,7 @@ Obsah tychto tabuliek teda musi byt uvedeny v textovom subore.
        
 Priklad celeho suboru:
 ```
-#riadok tabulky settings - vsetky hodnoty MUSIA byt vyplnene. Vacsinou taci zmenut NAME, AUTHOR, LANG, STARROOM a ACTUAL
+#riadok tabulky settings - vsetky hodnoty MUSIA byt vyplnene. Vacsinou staci zmenit NAME, AUTHOR, LANG, STARROOM a ACTUAL
 $S
 NAME        Testovací príbeh
 AUTHOR      VlNa
@@ -105,6 +105,7 @@ GTTS_SLOW   0
 NO_WAY      Neplatná voľba
 EXIT_GAME   Medzera: ukončí program.
 TALKING     Rozprávam...
+THE_END     KONIEC
 #riadky tabulky rooms - popis miestnosti a akcii
 $R
 @1
