@@ -36,6 +36,8 @@ Pribeh je mozne pisat priamo do SQLIte databazy (nap. pomocou DB Browser for SQL
 
 Cistu databazu s potrebnymi tabulkami je mozne vytvorit pomocou programu dbmaker.exe zadamin: dbmaker.exe --empty
 
+Textový súbor by mal byt v kódovaní windows CP-1250/1252.
+
 Struktura textoveho dokumentu, ktory je mozno konvertovat do databazy je nasledovna:
 
 Databaza potrebuje tri tabulky : settings, rooms, routes.
@@ -112,13 +114,13 @@ Zlatá miestnosť
 Si v zlatej miestnosti. Pred sebou vidíš strieborné dvere.
 #ako sa do tejto miestnosti dostaneme z inych miestnosti
 Prejdi cez zlaté dvere.
-bg/wind.wav
+bgs/wind.wav
 @2
 sk
 Strieborná miestnosť
 Si v striebornej miestnosti.  Pred sebou vidíš zlaée dvere.
 Prejdi cez strieborné dvere.
-bg/wind.wav
+bgs/wind.wav
 #riadky tabulky routes - odkial sa kam ide
 $O
 #z prvej miestnosti prvym vychodom do druhej miestnosti
