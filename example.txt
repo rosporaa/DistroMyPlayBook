@@ -1,26 +1,26 @@
 #riadok tabulky settings - vsetky hodnoty MUSIA byt vyplnene. Vacsinou staci zmenit NAME, AUTHOR, LANG, STARROOM a ACTUAL
 #row of settings table - all values need to be set. You can use more rows with different LANG value 
 $S
-NAME        TestovacÃ­ prÃ­beh
+NAME        Testovací príbeh
 AUTHOR      VlNa
 LANG        sk
 STARTROOM   1
-END_DEF     To je koniec tvojho dobrodruÅ¾stva.
-END_DEAD    NaÅ¡li Å¥a mÅ•tveho po niekoÄ¾kÃ½ch dÅˆoch...
-END_GOLD    VrÃ¡til si sa  domov a uÅ¾Ã­vaÅ¡ si nadobudnutÃ© bohatstvo...
-END_HERO    VrÃ¡til si sa domov ako veÄ¾kÃ½ hrdina. Teraz mÃ´Å¾eÅ¡ aj ty rozprÃ¡vaÅ¥ v krÄme svoje dobrodruÅ¾stvÃ¡... 
-END_LIVE    Si rÃ¡d, Å¾e si sa vrÃ¡til domov Å¾ivÃ½ a zdravÃ½. UÅ¾ viac nikam nepÃ´jdeÅ¡ a radÅ¡ej o svojom dobrodruÅ¾stve ani nikomu niÄ nepovieÅ¡.
-QUESTION    ÄŒo urobÃ­Å¡?
-MOVE_1      Å Ã­pka hore
-MOVE_2      Å Ã­pka dole
-MOVE_3      Å Ã­pka vpravo
-MOVE_4      Å Ã­pka vÄ¾avo
-ENTER       Enter:  PrerozprÃ¡vaj odznova.
+END_DEF     To je koniec tvojho dobrodrustva.
+END_DEAD    Našli a màtveho po nieko¾kıch dòoch...
+END_GOLD    Vrátil si sa  domov a uívaš si nadobudnuté bohatstvo...
+END_HERO    Vrátil si sa domov ako ve¾kı hrdina. Teraz môeš aj ty rozpráva v krème svoje dobrodrustvá... 
+END_LIVE    Si rád, e si sa vrátil domov ivı a zdravı. U viac nikam nepôjdeš a radšej o svojom dobrodrustve ani nikomu niè nepovieš.
+QUESTION    Èo urobíš?
+MOVE_1      Šípka hore
+MOVE_2      Šípka dole
+MOVE_3      Šípka vpravo
+MOVE_4      Šípka v¾avo
+ENTER       Enter:  Prerozprávaj odznova.
 ACTUAL      1
 GTTS_SLOW   0
-NO_WAY      NeplatnÃ¡ voÄ¾ba
-EXIT_GAME   Medzera: ukonÄÃ­ program.
-TALKING     RozprÃ¡vam...
+NO_WAY      Neplatná vo¾ba
+EXIT_GAME   Medzera: ukonèí program.
+TALKING     Rozprávam...
 THE_END     KONIEC
 $S
 NAME        Test adventure 
@@ -49,10 +49,10 @@ THE_END     THE END
 $R
 @1
 sk
-ZlatÃ¡ miestnosÅ¥
-Si v zlatej miestnosti. Pred sebou vidÃ­Å¡ striebornÃ© dvere.
+Zlatá miestnos
+Si v zlatej miestnosti. Pred sebou vidíš strieborné dvere.
 #ako sa do tejto miestnosti dostaneme z inych miestnosti
-Prejdi cez zlatÃ© dvere.
+Prejdi cez zlaté dvere.
 bg/wind.wav
 @1
 en
@@ -63,9 +63,9 @@ Use golden doors.
 bg/wind.wav
 @2
 sk
-StriebornÃ¡ miestnosÅ¥
-Si v striebornej miestnosti.  Pred sebou vidÃ­Å¡ zlatÃ© dvere.
-Prejdi cez striebornÃ© dvere.
+Strieborná miestnos
+Si v striebornej miestnosti.  Pred sebou vidíš zlaté dvere.
+Prejdi cez strieborné dvere.
 bg/wind.wav
 @2
 en
